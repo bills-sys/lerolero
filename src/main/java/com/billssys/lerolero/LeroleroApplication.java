@@ -8,6 +8,17 @@ public class LeroleroApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LeroleroApplication.class, args);
+
+		System.out.println("Result => " + foo());
+		System.out.println("Exit!");
+	}
+
+	public static int foo() {
+		int result = 0;
+		for (int i=1; i<21; i++) {
+			result += Math.pow(2, i);
+		}
+		return result;
 	}
 
 }
