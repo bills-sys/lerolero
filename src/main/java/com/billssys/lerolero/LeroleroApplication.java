@@ -14,11 +14,11 @@ public class LeroleroApplication {
 	}
 
 	public static int foo() {
-		int result = 0;
+		double result = 0;
 		for (int i=1; i<21; i++) {
 			result += Math.pow(2, i);
 		}
-		return result;
+		return (int) result;
 	}
 
 }
